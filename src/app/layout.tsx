@@ -23,8 +23,11 @@ export default function RootLayout({
       <body
         className={
           inter.className +
-          "  bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900"
+          "  bg-slate-900 leading-relaxed text-[#BCC5D2] antialiased selection:bg-teal-300 selection:text-teal-900"
         }
+        style={{
+          color: "#BCC5D2",
+        }}
       >
         <Theme>{children}</Theme>
       </body>

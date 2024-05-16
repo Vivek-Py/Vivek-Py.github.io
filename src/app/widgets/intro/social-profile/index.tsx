@@ -36,7 +36,7 @@ export default function SocialProfile() {
       >
         <motion.li variants={child} className="mr-5 text-xs" key="github">
           <a
-            className="block hover:text-slate-200 text-slate-400"
+            className="block hover:text-slate-200 text-[#BCC5D2]"
             href="https://github.com/Vivek-Py"
             target="_blank"
             rel="noreferrer noopener"
@@ -51,7 +51,7 @@ export default function SocialProfile() {
         </motion.li>
         <motion.li variants={child} className="mr-5 text-xs" key="linkedin">
           <a
-            className="block hover:text-slate-200 text-slate-400"
+            className="block hover:text-slate-200 text-[#BCC5D2]"
             href="https://www.linkedin.com/in/vivekpandey2000/"
             target="_blank"
             rel="noreferrer noopener"
@@ -66,7 +66,7 @@ export default function SocialProfile() {
         </motion.li>
         <motion.li variants={child} className="mr-5 text-xs" key="portfolio">
           <a
-            className="block hover:text-slate-200 text-slate-400"
+            className="block hover:text-slate-200 text-[#BCC5D2]"
             href="https://blog.vivekpandey.live/"
             target="_blank"
             rel="noreferrer noopener"
@@ -84,7 +84,7 @@ export default function SocialProfile() {
         </motion.li>
         <motion.li variants={child} className="mr-5 text-xs" key="twitter">
           <a
-            className="block hover:text-slate-200 text-slate-400"
+            className="block hover:text-slate-200 text-[#BCC5D2]"
             href="https://twitter.com/gobbledgeek?lang=en"
             target="_blank"
             rel="noreferrer noopener"
@@ -102,7 +102,7 @@ export default function SocialProfile() {
         </motion.li>
         <motion.li variants={child} className="mr-5 text-xs" key="podcast">
           <a
-            className="block hover:text-slate-200 text-slate-400"
+            className="block hover:text-slate-200 text-[#BCC5D2]"
             href="https://podcasters.spotify.com/pod/show/vivek-py"
             target="_blank"
             rel="noreferrer noopener"

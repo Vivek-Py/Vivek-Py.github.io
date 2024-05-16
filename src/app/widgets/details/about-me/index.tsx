@@ -11,12 +11,12 @@ export default function AboutMe() {
         </h2>
       </div>
       <div>
-        <p className="mb-4 text-slate-400">
+        <p className="mb-4 text-[#BCC5D2]">
           I build new projects just to tickle my brain and love teaching others
           how they&apos;re made. While I keep busy learning, I still take
           interviews in search of a great team & projects that interest me.
         </p>
-        <p className="text-slate-400">
+        <p className="text-[#BCC5D2]">
           I&apos;ve had the privilege of building software for a{" "}
           <a
             className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Box, Grid } from "@radix-ui/themes";
 import Intro from "./widgets/intro";
 import Details from "./widgets/details";
