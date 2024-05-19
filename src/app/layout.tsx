@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Theme } from "@radix-ui/themes";
+import BaseLayout from "./widgets/base-layout";
 
 import "@radix-ui/themes/styles.css";
 import "./globals.css";
@@ -18,8 +19,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const isDarkTheme = true;
   return (
-    <html lang="en" className="scroll-smooth dark">
+    <BaseLayout>
       <body
         className={
           inter.className +
@@ -31,6 +33,6 @@ export default function RootLayout({
       >
         <Theme>{children}</Theme>
       </body>
-    </html>
+    </BaseLayout>
   );
 }
