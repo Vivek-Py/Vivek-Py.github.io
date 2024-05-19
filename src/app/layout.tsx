@@ -19,14 +19,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth dark">
       <body
         className={
           inter.className +
-          "  bg-slate-900 leading-relaxed text-[#BCC5D2] antialiased selection:bg-teal-300 selection:text-teal-900"
+          "  bg-[#ffefd5] dark:bg-slate-900 leading-relaxed text-[#112A46] dark:text-[#BCC5D2] antialiased selection:bg-teal-300 selection:text-[#112A46]"
         }
         style={{
-          color: "#BCC5D2",
+          color: "#112A46",
         }}
       >
         <Theme>{children}</Theme>
