@@ -6,18 +6,14 @@ interface CustomEvent {
   matches: boolean;
 }
 
-const useThemeDetector = () => {
-  let initialVal = false;
-  if (typeof window !== "undefined") {
-    initialVal = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  }
-  const [isDarkTheme, setIsDarkTheme] = useState(initialVal);
+const useThemeDetector = (): String => {
+  const [isDarkTheme, setIsDarkTheme] = useState("dark");
   const mqListener = (e: CustomEvent) => {
-    setIsDarkTheme(e.matches);
+    setIsDarkTheme(e.matches ? "dark" : "light");
   };
   useEffect(() => {
     const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
-    setIsDarkTheme(darkThemeMq.matches);
+    mqListener(darkThemeMq);
     darkThemeMq.addEventListener("change", mqListener);
     return () => darkThemeMq.removeEventListener("change", mqListener);
   }, []);

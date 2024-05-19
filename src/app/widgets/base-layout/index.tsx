@@ -3,12 +3,9 @@
 import useThemeDetector from "@/app/hooks/useThemeDetector";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
-  const isDarkTheme = useThemeDetector();
+  const theme = useThemeDetector();
   return (
-    <html
-      lang="en"
-      className={`scroll-smooth ${isDarkTheme ? "dark" : "light"}`}
-    >
+    <html lang="en" className={`scroll-smooth ${theme}`}>
       {children}
     </html>
   );
