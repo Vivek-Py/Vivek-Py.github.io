@@ -7,7 +7,7 @@ export default function Bio() {
         Vivek Pandey
       </h1>
       <h2 className="mt-3 text-lg font-medium tracking-tight text-[#112A46] dark:text-[#BCC5D2] sm:text-xl">
-        Software Engineer at Flipkart
+        Senior Software Engineer at PayPal
       </h2>
       <p className="mt-4 max-w-xs leading-normal text-[#112A46] dark:text-[#BCC5D2]">
         Web developer who loves to build apps which&apos;ll help millions, if

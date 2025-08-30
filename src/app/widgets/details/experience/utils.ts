@@ -1,5 +1,14 @@
 export const getTechStack = (company: string): Array<string> => {
   switch (company) {
+    case "PayPal":
+      return [
+        "React",
+        "GraphQL",
+        "TypeScript",
+        "JavaScript",
+        "Kraken",
+        "NodeJS",
+      ];
     case "Flipkart":
       return [
         "React",
@@ -22,10 +31,45 @@ export const getTechStack = (company: string): Array<string> => {
   }
 };
 
-export const getExperienceData = () => {
-  return [
+interface ExperienceItem {
+  timeline: string;
+  role: string;
+  company: string;
+  companyWebsite: string;
+  responsibility: string;
+  projectLinks?: Array<{
+    name: string;
+    link: string;
+  }>;
+}
+
+export interface ExperienceData {
+  title: string;
+  items: ExperienceItem[];
+}
+
+export const getExperienceData = (): ExperienceData[] => {
+  const workExperience: ExperienceItem[] = [
     {
-      timeline: "2022 - Present",
+      timeline: "2025 - Present",
+      role: "Senior Software Engineer",
+      company: "PayPal",
+      companyWebsite: "https://paypal.com/",
+      responsibility:
+        "As an Engineer at PayPal, I design and develop user-friendly interfaces for Merchants for gaining capital access to help them grow their business via working capital and loan builder.",
+      projectLinks: [
+        {
+          name: "Working Capital",
+          link: "https://paypal.com/workingcapital",
+        },
+        {
+          name: "Loan Builder",
+          link: "https://www.paypal.com/merchant-lending/loanbuilder/",
+        },
+      ],
+    },
+    {
+      timeline: "2022 - 2025",
       role: "UI Engineer",
       company: "Flipkart",
       companyWebsite: "https://flipkart.com",
@@ -50,6 +94,9 @@ export const getExperienceData = () => {
       responsibility:
         "Delivered high-quality, robust and scalable production code for a diverse array of projects for clients",
     },
+  ];
+
+  const internships: ExperienceItem[] = [
     {
       timeline: "2020 - 2021",
       role: "Student Ambassador",
@@ -81,6 +128,17 @@ export const getExperienceData = () => {
           link: "https://www.geeksforgeeks.org/script-aculo-us-installation/",
         },
       ],
+    },
+  ];
+
+  return [
+    {
+      title: "Primary Quests",
+      items: workExperience,
+    },
+    {
+      title: "Side Quests",
+      items: internships,
     },
   ];
 };
